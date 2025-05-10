@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserve a Table</title>
+  <link rel="stylesheet" href="sthh.css">
+  <style>
+    .progress-bar {
+      width: 100%;
+      max-width: 300px;
+      height: 20px;
+      background-color: #eee;
+      margin: 20px auto;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #4caf50;
+      transition: width 2s linear;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #confirmation {
+      font-size: 18px;
+      color: green;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="Indexn.html"><img src="pngtree-burger-logo-png-image_8995970.png" class="logo" alt="Smash Joint Logo"></a>
+      <a href="Indexn.html"><span>smash joint</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Indexn.html">Home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="3.html">Menu</a></li>
+      <li><a href="index.html">Opinions</a></li>
+      <li><a href="Contant_Us.html">Contact Us</a></li>
+    </ul>
+
+    <a href="indexz.html" class="btn">Sign in</a>
+    
+  </nav>
+
+ 
+
+  <section class="reservation-hero">
+    <h1>Reserve a Table</h1>
+    <p>Enjoy a premium lunch experience. Book your table below.</p>
+  </section>
+
+  <div class="reservation-content">
+    <section class="reservation-form">
+      <form id="reservationForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="tables">Table Number</label>
+        <input type="number" id="tables" name="table number" min="1" max="5" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <label for="requests">Special Requests</label>
+        <textarea id="requests" name="requests" placeholder="Let us know if you have any special needs..."></textarea>
+
+        <button type="button" onclick="confirmBooking()">Book Now</button>
+
+        <div class="progress-bar hidden" id="progressBar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <p id="confirmation" class="hidden">Your booking has been confirmed!</p>
+      </form>
+    </section>
+
+    <div class="video-container">
+      <video id="myVideo" autoplay muted loop>
+        <source src="Untitled 21_1080p.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <script>
+    function confirmBooking() {
+      const progressBar = document.getElementById("progressBar");
+      const progressFill = document.getElementById("progressFill");
+      const confirmation = document.getElementById("confirmation");
+
+      progressFill.style.width = "0%";
+      confirmation.classList.add("hidden");
+      progressBar.classList.remove("hidden");
+
+    
+      setTimeout(() => {
+        progressFill.style.width = "100%";
+      }, 100);
+
+      
+      setTimeout(() => {
+        progressBar.classList.add("hidden");
+        confirmation.classList.remove("hidden");
+      }, 2100);
+    }
+  </script>
+</body>
+</html>

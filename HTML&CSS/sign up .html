@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="sign up.css">
+</head>
+<body>
+    <form class="Registration">
+        <h1>Registration</h1>
+        <input type="text" class="input" name="first_name" placeholder="First Name">
+        <input type="text" class="input" name="last_name" placeholder="Last Name">
+        <input type="email" class="input" name="user_name" placeholder="User Name">
+        <input type="password" class="input" name="password" placeholder="Password">
+        <button type="submit" class="button">Sign up</button>
+        <p>Already have an account? <a href="indexz.html">Login here</a></p>
+      </form>
+      
+  <script>
+    document.querySelector('.Registration').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const firstName = document.querySelector('input[name="first_name"]').value;
+      const lastName = document.querySelector('input[name="last_name"]').value;
+      const email = document.querySelector('input[name="user_name"]').value;
+      const password = document.querySelector('input[name="password"]').value;
+
+      if (firstName && lastName && email && password) {
+        alert('Account created successfully!');
+        window.location.href = 'indexz.html'; 
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+  </script>
+  
+  
+</body>
+</html>

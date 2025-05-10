@@ -1,0 +1,45 @@
+body {
+  background-image: url(images/Burger.jpeg);
+  background-position:center;
+  background-size: cover;
+}
+
+.login_dev {
+  padding: 30px;
+  width: 300px;
+  margin: 120px auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 50vh;
+  background-color: rgba(144, 80, 20, 0.174);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #373a3e, -10px -10px 20px #393535;
+}
+
+
+.input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 15px 5px;
+  padding: 10px 10px;
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.button {
+  color:brown;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 60%;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: rgb(104, 46, 9);
+  box-shadow: inset 10px 10px 20px #1a1b1b, inset -10px -10px 20px #433f3f;
+}

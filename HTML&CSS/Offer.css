@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html ,body{
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top {
+  background-color: #2C180F;
+  color: peachpuff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  position: relative;
+}
+
+.image-top-left {
+  border: inset saddlebrown 4px;
+  max-width: 20%;
+  height: auto;
+  border-radius: 70px 30px;
+}
+
+.top-texts {
+  max-width: 35%;
+  text-align: center;
+}
+
+.top-texts h2 {
+  font-family: "Mogra", system-ui;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.top-texts p {
+  margin: 10px 0;
+}
+
+#Text_2 {
+  font-family: "Kalam", cursive;
+  font-size: 25px;
+  color: chocolate;
+  font-weight: bold;
+}
+
+#Text_3 {
+  font-family: "Marck Script", cursive;
+  font-size: 40px;
+}
+
+#home, #and {
+  font-family: "Marck Script", cursive;
+  font-size: 28px;
+  color: papayawhip;
+  border: #d6b29e inset 3px;
+  /* padding: 10px; */
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.middle-button {
+  background-image: linear-gradient(#2C180F 50%, #d6b29e 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-button button {
+  border: #2f1b0f inset 3px;
+  padding: 20px 40px;
+  font-size: 24px;
+  background-image: linear-gradient(#2C180F, #d6b29e);
+  border-radius: 20px 35px;
+  cursor: pointer;
+  color: white;
+  font-weight: 800;
+}
+
+.bot {
+  background-color: #d6b29e;
+  color: #2C180F;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.image-bottom-right {
+  border: inset firebrick 5px;
+  max-width: 20%;
+  height: auto;
+  border-radius: 70px 30px; 
+}
+
+.bottom-texts {
+  max-width: 35%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#Text_4 {
+  padding-top: 35px;
+  font-family: "Mogra", system-ui;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.Text_5 {
+  font-family: "Marck Script", cursive;
+  font-size: 25px;
+  color: white;
+  border: saddlebrown inset 5px;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #2C180F;
+  display: inline-block;
+}
+
+.Text_6 {
+  font-family: "Marck Script", cursive;
+  font-size: 26px;
+  color: white;
+  border: saddlebrown inset 5px;
+  
+  background-color: #2C180F;
+  white-space: pre-wrap;
+}
+.top, .bot {
+  
+  overflow: hidden;
+  max-height:46vh;
+}
+
+.hidden-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.hidden-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}

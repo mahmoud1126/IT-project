@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Us</title>
+    <link rel="stylesheet" href="Contact_Us.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 id="Contact">Contact Us</h1>
+        <img src="Contact_Us.jpeg" alt="Contact Us" class="photo-page">
+        <form class="form">
+            <fieldset>
+                <legend>Send Us A Message</legend>
+
+                <p>
+                    <label for="Name">Name:</label>
+                    <input autofocus name="Name" type="text" required id="Name" placeholder="Full Name">
+                </p>
+
+                <p>
+                    <label for="Email">Email:</label>
+                    <input name="Email" type="email" required id="Email" placeholder="E-mail">
+                </p>
+
+                <p>
+                    <label>What Is It About?</label><br>
+                    <input type="radio" name="About" value="issue">
+                    <label>Report an issue</label><br>
+                    <input type="radio" name="About" value="Feedback">
+                    <label>Customer Feedback</label><br>
+                    <input type="radio" name="About" value="Other">
+                    <label>Other</label><br><br>
+                </p>
+
+                <p>
+                    <label for="Message">Message</label><br>
+                    <textarea name="Content" placeholder="Message" cols="55" rows="10" id="Message"></textarea>
+                </p>
+
+                <h3>Contact</h3>
+                <p>Sia@Restaurant.com</p>
+
+                <h3>Egyptian Test</h3>
+                <p>Local Soul</p>
+
+                <button type="submit"><b>Contact Us</b></button>
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

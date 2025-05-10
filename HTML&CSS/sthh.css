@@ -1,0 +1,186 @@
+
+
+body {
+  background-image: url("croc_1746530532986 (1).jpg");
+  background-size: cover;
+  background-position: center;
+}
+.navbar {
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: space-between;
+  padding: 10px 20px ;
+  color: white;
+  position: static;
+  top: 0;
+  z-index: 1000;
+  
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center; 
+  height: 40px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px; 
+}
+
+.nav-logo span {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.nav-logo a {
+  text-decoration: none;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.btn {
+  color:#ffffff ;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;  
+  min-width: 100px;
+  max-width: 100px;  
+  font-weight: bold;
+  margin-right: 70px;
+  font-family: "Sansita Swashed", system-ui;
+  max-height: 50px;
+  margin-top: 10px;
+  transition: 0.5s ease;
+}
+.btn:hover{
+  color:#ffcc00;
+  transform: scale(1.1);
+}
+.reservation-hero {
+  background-image: url('restaurant-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.reservation-hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.reservation-hero p {
+  font-size: 1.2em;
+}
+
+.reservation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: rgb(49, 36, 36);
+  padding: 20px;
+  border-radius: 12px;
+  color: rgb(255, 242, 128);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-container {
+  display: flex;
+ align-items: flex-start;
+ justify-content: flex-end;
+  padding: 20px;
+}
+
+#myVideo {
+  width: 350px;
+  border: 3px solid #444;
+  border-radius: 10px;
+  padding: 5px ;
+ 
+  
+}
+
+form label {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffd485;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #a93226;
+}
+
+@media (max-width: 600px) {
+  .reservation-hero h1 {
+    font-size: 2em;
+  }
+
+  .reservation-hero p {
+    font-size: 1em;
+  }
+
+  .reservation-content {
+    flex-direction: column;
+  }
+  
+  
+}
+
+

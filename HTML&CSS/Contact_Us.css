@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#d6b29e;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 50px;
+    width: 100%;
+}
+
+#Contact {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 31%;
+    transform: translateX(-50%);
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.photo-page {
+    width: 600px;
+    height: 600px;
+    margin-top: 60px;
+    border-radius: 10px;
+    left: 0px;
+    display: flex;
+    border: #d6b29e 4px inset;
+    
+}
+
+.form {
+    max-width: 600px;
+    padding: 20px;
+    background-color:#d6b29e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #f5ebdd inset;
+    border: #d6b29e 3px outset;
+
+}
+
+.form fieldset {
+    border: none;
+}
+
+.form legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form p {
+    margin-bottom: 15px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form button,
+.form input[type="reset"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #444;
+}

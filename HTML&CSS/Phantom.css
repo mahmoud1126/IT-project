@@ -1,0 +1,60 @@
+  body {
+      
+      background-image: url('images/burger.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #000000;
+      
+    
+    }
+
+  h1 {
+      color: #000000;
+      text-align: left;
+    } 
+
+
+  #p1, #p2 {
+    overflow: hidden;
+    font-size: x-large;
+  }
+
+  #p3 {
+    font-size: x-large;
+  }
+
+
+  #d1 {
+    font-size: x-large;
+    display: none;
+  }
+
+  #d2 {
+    font-size: x-large;
+  }
+
+/*
+THE BUTTON CODE 
+*/
+
+#b ,#b3{
+  display: flex;
+  justify-content: left;
+  gap: 20px; 
+  margin-top: 30px; 
+}
+
+#b button , #b3 {
+  font-size: x-large;
+  background-color: #523219;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#b button:hover {
+  background-color: rgb(78, 2, 2);
+}
